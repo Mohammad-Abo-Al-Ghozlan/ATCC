@@ -746,9 +746,9 @@
         <div id="particles-js"></div>
         <div class="container hero-content">
             <div class="row">
-                <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1500">
-                    <h1 class="hero-title animate__animated animate__fadeInDown">Building Excellence in Every Project</h1>
-                    <p class="hero-subtitle animate__animated animate__fadeIn animate__delay-1s">ATCE realizes that quality services are paramount to its success and to the satisfaction of its customers and therefore committed to provide its services with the highest quality of international standards.</p>
+                <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1500" style="transform: translate(-50px, 30px);">
+                    <h1 class="hero-title animate__animated animate__fadeInDown" style="font-size:medium;">Building Excellence in Every Project</h1>
+                    <p class="hero-subtitle animate__animated animate__fadeIn animate__delay-1s" style="font-size:medium;min-width: 200px;">ATCE realizes that quality services are paramount to its success and to the satisfaction of its customers and therefore committed to provide its services with the highest quality of international standards.</p>
                     <div class="animate__animated animate__fadeInUp animate__delay-2s">
                         <a href="#contact" class="btn btn-hero btn-primary btn-lg me-3">Contact Us</a>
                         <a href="#projects" class="btn btn-hero btn-outline-light btn-lg">Our Projects</a>
@@ -760,6 +760,84 @@
             <i class="fas fa-chevron-down"></i>
         </div>
     </section>
+    <style>
+        /* Base hero styling */
+.hero {
+    display: flex;
+    align-items: center;   /* Vertical center */
+    justify-content: center; /* Horizontal center */
+    text-align: center;
+    min-height: 100vh;
+    padding: 100px 20px; /* Flexible padding */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=90')
+                no-repeat center center/cover;
+}
+
+/* Hero content wrapper */
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Title and subtitle */
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #ddd;
+}
+
+/* Buttons */
+.btn-hero {
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 30px;
+    margin: 0 10px 15px;
+}
+
+/* Ensure buttons stay centered in a row */
+.hero .d-flex {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Media queries for scaling */
+@media (min-width: 1400px) {
+    .hero-title { font-size: 4.5rem; }
+    .hero-subtitle { font-size: 1.8rem; }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+    .hero-title { font-size: 4rem; }
+    .hero-subtitle { font-size: 1.5rem; }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-title { font-size: 3rem; }
+    .hero-subtitle { font-size: 1.3rem; }
+}
+
+@media (max-width: 767px) {
+    .hero-title { font-size: 2.3rem; }
+    .hero-subtitle { font-size: 1.1rem; }
+    .btn-hero {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto 15px;
+        display: block;
+    }
+}
+
+    </style>
 
     <!-- About Section -->
     <section id="about" class="about-section">
