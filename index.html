@@ -38,7 +38,6 @@
             left: 0;
             width: 100%;
             height: 100%;
-/*             background: var(--gradient); */
             backdrop-filter: blur(radius);
             display: flex;
             justify-content: center;
@@ -170,7 +169,6 @@
         .hero-content {
             z-index: 1;
             position: relative;
-            width:200px;
         }
 
         .hero-title {
@@ -733,7 +731,7 @@
     <section id="home" class="hero">
         <div id="particles-js"></div>
         <div class="container hero-content">
-            <div class="row">
+            <div class="row" style="transform: translate(-7px, 40px);">
                 <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1500">
                     <h1 class="hero-title animate__animated animate__fadeInDown">Building Excellence in Every Project</h1>
                     <p class="hero-subtitle animate__animated animate__fadeIn animate__delay-1s">ATCE realizes that quality services are paramount to its success and to the satisfaction of its customers and therefore committed to provide its services with the highest quality of international standards.</p>
@@ -1255,7 +1253,4 @@
         window.addEventListener('load', animateText);
     </script>
 </body>
-
 </html>
-
-
