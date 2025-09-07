@@ -731,50 +731,53 @@
     <section id="home" class="hero">
         <div id="particles-js"></div>
         <div class="container hero-content">
-            <div class="row">
-    <div class="col-lg-8 mx-auto text-center page-header-content" data-aos="fade-up">
-        <h1 class="display-4 fw-bold responsive-title">Our Services</h1>
-        <p class="lead responsive-subtitle">Comprehensive Construction Solutions with International Standards</p>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb justify-content-center">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Services</li>
-            </ol>
-        </nav>
+  <!-- Replace the existing hero row with this responsive version -->
+<div class="row justify-content-center">
+    <div class="col-12 col-md-10 col-lg-8 text-center text-lg-start" data-aos="fade-right" data-aos-duration="1500">
+        <h1 class="hero-title animate__animated animate__fadeInDown">Building Excellence in Every Project</h1>
+        <p class="hero-subtitle animate__animated animate__fadeIn animate__delay-1s">ATCE realizes that quality services are paramount to its success and to the satisfaction of its customers and therefore committed to provide its services with the highest quality of international standards.</p>
+        <div class="animate__animated animate__fadeInUp animate__delay-2s">
+            <a href="contact-us.html" class="btn btn-hero btn-primary btn-lg me-3">Contact Us</a>
+            <a href="projects.html" class="btn btn-hero btn-outline-light btn-lg">Our Projects</a>
+        </div>
     </div>
 </div>
+
+<!-- Add this CSS to your existing styles for additional responsive improvements -->
 <style>
-    /* General responsiveness */
-.responsive-title {
-    font-size: 2.5rem; /* Default for desktops */
+/* Additional responsive styles for hero section */
+@media (max-width: 991px) {
+    .hero-content .row {
+        transform: translate(0, 40px) !important; /* Remove horizontal offset on mobile */
+    }
 }
 
-.responsive-subtitle {
-    font-size: 1.25rem;
+@media (max-width: 768px) {
+    .hero-content .row {
+        transform: translate(0, 20px) !important; /* Reduce vertical offset on small screens */
+    }
+    
+    .btn-hero {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .btn-hero.me-3 {
+        margin-right: 0 !important;
+    }
 }
 
-/* Tablets */
-@media (max-width: 992px) {
-    .responsive-title {
+@media (max-width: 576px) {
+    .hero-title {
         font-size: 2rem;
     }
-    .responsive-subtitle {
+    
+    .hero-subtitle {
         font-size: 1.1rem;
     }
 }
-
-/* Mobile screens */
-@media (max-width: 576px) {
-    .responsive-title {
-        font-size: 1.6rem;
-    }
-    .responsive-subtitle {
-        font-size: 1rem;
-    }
-}
-
-</style>
-        </div>
+</style>       </div>
         <div class="scroll-indicator">
             <i class="fas fa-chevron-down"></i>
         </div>
@@ -1287,4 +1290,5 @@
     </script>
 </body>
 </html>
+
 
